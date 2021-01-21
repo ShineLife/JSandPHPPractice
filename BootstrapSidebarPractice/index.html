@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap側邊欄</title>
+    <link rel="stylesheet" href="../vendor/bootstrap4/bootstrap.min.css">
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <script src="../jquery.min.js"></script>
+    <script src="../vendor/bootstrap4/bootstrap.min.js"></script>
+    <script src="sidebar.js"></script>
+    <div class="wrapper">
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h5 class="text-center">新北市紅外線熱像儀</h5>
+                <h5 class="text-center">跨校自製資訊電子化防疫工具</h5>
+            </div>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <div class="input-group justify-content-center mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">溫度限制</span>
+                        </div>
+                        <input type="number" style="width:35%;" class="form-control" name="" value="37.5" id="max_temperature">
+                        <div class="input-group-append">
+                            <input type="button" value="修改" class="btn btn-primary form-control" id="max_change">
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"></li>
+                <li class="nav-item"></li>
+            </ul>
+        </nav>
+        <div id="content">
+            <button type="button" id="sidebarCollapse" class="navbar-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</body>
+</html>

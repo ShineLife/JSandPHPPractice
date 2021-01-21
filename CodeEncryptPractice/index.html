@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web程式加密器</title>
+</head>
+<body>
+    <script>
+        var Words;
+        function SetWords(word) {
+            Words = escape(word.value);
+        }
+        function SetNewWords(form) {
+            var NewWords;
+            NewWords = Words;
+            form.NewWords.value = NewWords;
+        }
+    </script>
+
+    <form method=post>
+        <br>請在這裡輸入要加密 的網頁的原始碼:<br>
+        <textarea name="Word" value="" rows=15 cols=70 onChange="SetWords(this)">
+        </textarea>
+        <br> <input type="BUTTON" onClick="SetNewWords(this.form)" value="按我轉換" name="BUTTON">
+        
+        <br>按下轉換扭以後, 以下是加密過的原始碼 <br>
+        <textarea name="NewWords" value="" rows=15 cols=70 onFocus="this.select()" onMouseOver="this.focus()">
+        </textarea>
+    </form>
+</body>
+</html>

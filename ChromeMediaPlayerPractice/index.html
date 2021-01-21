@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chrome</title>
+    <script src="../jquery.min.js"></script>
+</head>
+<body>
+    <audio src="http://localhost/media-player-master/api/albums/The Fame/02 LoveGame.m4a"></audio>
+    <input type="button" value="Play" id="play">
+    <script>
+        $(function() {
+            var audio = document.getElementsByTagName("audio")[0];
+            navigator.mediaSession.metadata = new MediaMetadata({
+                title: "Just Dance",
+                artist: "Lady Gaga"
+            });
+            $("#play").click(function() {
+                
+                audio.play();
+            });
+            
+        })
+    </script>
+</body>
+</html>
