@@ -1,0 +1,50 @@
+*{
+    font-family:Calibri;
+}
+body{
+    background-color: pink;
+}
+.backdiv{
+    background-color:white;
+    box-shadow:0 0 10px black;
+    width:80%;
+    height:800px;
+    position:absolute;
+    top:5%;
+    left:10%;
+}
+.head{
+    border-radius:50%;
+    width:200px;
+    height:200px;
+    position:absolute;
+    top:20%;
+    left:43%;
+}
+.text-name{
+    color:brown;
+    font-weight: 900;
+    font-size:48px;
+    position:absolute;
+    top:45%;
+    left:40%;
+}
+.text-name2{
+    color:gray;
+    font-weight: 900;
+    font-size:24px;
+    position:absolute;
+    top:55%;
+    left:44%;
+}
+.underbutton{
+    background-color: orangered;
+    border-radius:20px;
+    padding:10px;
+    color:white;
+    border:none;
+    font-size:24px;
+    position:absolute;
+    top:65%;
+    left:46%;
+}
